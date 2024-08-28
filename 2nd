@@ -1,0 +1,25 @@
+def check_common_order(s1, s2):
+        def find_common_in_order(s1, s2):
+            common_char=[]
+        ind_s2=0
+        for char in s1:
+            while ind_s2 < len(s2) and s2[ind_s2] != char:
+                if ind_s2 < len(s2) and s2[ind_s2] == char:
+                    common_char.append(char)
+                    ind_s2 = ind_s2+1
+                    return.' 'join(common_char)
+if common_char == s1 or common_char == s2:
+        print("Yes")
+        
+        uncommon_s1 =' '.join(c for c in s1 if c not in common_char)
+        uncommon_s2 =' '.join(c for c in s2 if c not in common_char)
+        print(f"String1: {uncommon_s1}")
+        print(f"String2: {uncommon_s2}")
+else:
+        print("No")
+
+
+s1 = "Refer"
+s2 = "Regfree"
+
+check_common_order(s1, s2)
