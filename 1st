@@ -1,0 +1,8 @@
+def reverse_words_in_string(string):
+    words = string.split()
+    reverse = [word[::-1] for word in words]
+    reverse_string = ' '.join(reverse)
+    return reverse_string
+string = "ViDeo // JI 4455VGHGvfg jjj,,,,,, SurVeiLLance SyStems"
+result = reverse_words_in_string(string)
+print(result)
